@@ -8,3 +8,14 @@
 html, body {
 	height : 100%;
 }
+
+/*调整内容不被顶部工具栏覆盖*/
+body {
+	padding-top : 90px;
+}
+
+span.icon {
+	display: inline-block;
+	width:16px;
+	height:16px;
+}

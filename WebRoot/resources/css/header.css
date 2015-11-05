@@ -10,7 +10,6 @@ a.navbar-brand {
 
 .navbar-toolbar {
 	min-height: 80px;
-	padding-top: 10px;
 	border: 0px;
 }
 
@@ -60,7 +59,6 @@ a.navbar-brand {
 		box-shadow: 3px 3px 0px #969696;
 	}
 	
-	
 	a.navbar-brand {
 		padding-top: 5px;
 	}
@@ -71,7 +69,9 @@ a.navbar-brand {
 		border: 0px;
 	}
 	
-	
+	body {
+		padding-top: 80px;
+	}
 }
 
 

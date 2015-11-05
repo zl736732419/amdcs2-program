@@ -18,15 +18,31 @@
 <link href="resources/css/plugins/bootstrap.min.css" rel="stylesheet">
 <link href="resources/css/common.css" rel="stylesheet">
 <link href="resources/css/header.css" rel="stylesheet">
-
-
+<link href="resources/css/tabs.css" rel="stylesheet">
+<link href="resources/css/centercanvas.css" rel="stylesheet">
+<link href="resources/css/icon.css" rel="stylesheet">
 
 <script type="text/javascript" src="resources/js/plugins/jquery-1.9.1.js"></script>
-<script type="text/javascript"　src="resources/js/plugins/bootstrap.min.js"></script>
+<script type="text/javascript" src="resources/js/plugins/bootstrap.min.js"></script>
+<script type="text/javascript" src="resources/js/bootstrap.init.js"></script>
+<script type="text/javascript" src="resources/js/tabs.js"></script>
+<script type="text/javascript" src="resources/js/centercanvas.js"></script>
 </head>
 <body>
-
 <jsp:include page="header.jsp"></jsp:include>
+<div class="container-fluid" style="height:94%;">
+	<div class="row" style="height:100%;">
+		<div class="col-sm-2" style="height:100%;">
+			<jsp:include page="leftmenu.jsp"></jsp:include>
+		</div>
+		<div class="col-sm-8" style="height:100%;">
+			<jsp:include page="centercanvas.jsp"></jsp:include>
+		</div>
+		<div class="col-sm-2" style="height:100%;">
+			<jsp:include page="rightmenu.jsp"></jsp:include>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>

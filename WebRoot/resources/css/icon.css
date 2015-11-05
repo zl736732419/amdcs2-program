@@ -1,0 +1,27 @@
+.icon-alignLeft{
+	background:url('../images/icons/alignLeft.gif') no-repeat;
+}
+.icon-alignRight{
+	background:url('../images/icons/alignRight.gif') no-repeat;
+}
+.icon-alignHorizontalCenter{
+	background:url('../images/icons/alignVerticalCenter.gif') no-repeat;
+}
+.icon-alignTop{
+	background:url('../images/icons/alignTop.gif') no-repeat;
+}
+.icon-alignBottom{
+	background:url('../images/icons/alignBottom.gif') no-repeat;
+}
+.icon-alignVerticalCenter{
+	background:url('../images/icons/alignHorizontalCenter.gif') no-repeat;
+}
+.icon-alignMatchWidth{
+	background:url('../images/icons/icon-match-width.gif') no-repeat;
+}
+.icon-alignMatchHeight{
+	background:url('../images/icons/icon-match-height.gif') no-repeat;
+}
+.icon-alignMatchWidthAndHeight{
+	background:url('../images/icons/icon-match-width-and-height.gif') no-repeat;
+}
