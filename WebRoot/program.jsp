@@ -15,7 +15,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon" />
-<link href="resources/css/plugins/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="resources/css/plugins/bootstrap.min.css">
+<link rel="stylesheet" href="resources/css/plugins/bootstrap.slider.min.css">
+<link rel="stylesheet" href="resources/css/bootstrap.slider.init.css">
+
 <link href="resources/css/common.css" rel="stylesheet">
 <link href="resources/css/header.css" rel="stylesheet">
 <link href="resources/css/tabs.css" rel="stylesheet">
@@ -24,9 +28,14 @@
 
 <script type="text/javascript" src="resources/js/plugins/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="resources/js/plugins/bootstrap.min.js"></script>
+<script type="text/javascript" src="resources/js/plugins/bootstrap.slider.min.js"></script>
+
 <script type="text/javascript" src="resources/js/bootstrap.init.js"></script>
+<script type="text/javascript" src="resources/js/bootstrap.slider.init.js"></script>
+
 <script type="text/javascript" src="resources/js/tabs.js"></script>
 <script type="text/javascript" src="resources/js/centercanvas.js"></script>
+<script type="text/javascript" src="resources/js/const.js"></script>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>

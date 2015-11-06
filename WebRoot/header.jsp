@@ -9,7 +9,7 @@
 <base href="<%=basePath%>" />
 
 <nav class="navbar-toolbar navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
+	<div class="container-fluid" style="padding-top:5px;">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="javascript:void(0)">
 				<img alt="Brand" src="resources/images/logo.png" style="width:30px;height:40px;">

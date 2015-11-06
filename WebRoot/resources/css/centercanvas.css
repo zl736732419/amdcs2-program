@@ -7,6 +7,45 @@
 	padding-top : 10px;
 }
 
+.drawpanel {
+	height : 83%;
+	width: 100%;
+	position: relative;
+	overflow: auto;
+	padding-top:10px;
+}
+
+.panel-container {
+	width: 734px;
+	height: 480px;
+	margin: 20px auto 20px;
+	position: relative;
+	
+	-moz-box-shadow: 0 0px 3px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 0px 3px rgba(0, 0, 0, .4);
+}
+
+.grid-panel {
+	width:100%;
+	height:100%;
+	background-color: #ccc;
+}
+
+.scalepanel {
+	text-align: right;
+	line-height: 50px;
+	padding-right: 50px;
+	background-color:#f8f8f8;
+}
+
+/*设置面板边框阴影*/
+.draw-content {
+	-moz-box-shadow: 0 0px 3px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 0px 3px rgba(0, 0, 0, .4);
+}
+
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
   outline: 0;
   outline-offset: 0;
