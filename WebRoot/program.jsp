@@ -42,13 +42,16 @@
 <jsp:include page="header.jsp"></jsp:include>
 <div class="container-fluid" style="height:94%;">
 	<div class="row" style="height:100%;">
-		<div class="col-sm-2" style="height:100%;padding-right:0;">
+		<div id="leftMenu" class="col-sm-2" style="height:100%;padding-right:0;display:block;">
 			<jsp:include page="leftmenu.jsp"></jsp:include>
 		</div>
-		<div class="col-sm-8" style="height:100%;">
+		<div id="centerCanvas" class="col-sm-8" style="height:100%;position:relative;">
+			<!-- 用于隐藏和显示左右菜单栏 -->
+			<div class="hideIcon hideIconLeft" data-toggle="popover"></div>
 			<jsp:include page="centercanvas.jsp"></jsp:include>
+			<div class="hideIcon hideIconRight" data-toggle="popover"></div>
 		</div>
-		<div class="col-sm-2" style="height:100%;padding-left:0;">
+		<div id="rightMenu" class="col-sm-2" style="height:100%;padding-left:0;display:block;">
 			<jsp:include page="rightmenu.jsp"></jsp:include>
 		</div>
 	</div>

@@ -21,7 +21,7 @@
 			<table class="table table-condensed" >
 				<tr>
 					<td>页面名称</td>
-					<td><input type="text" style="width:110px;"/></td>
+					<td><input type="text" class="form-control menuInput"/></td>
 				</tr>
 				<tr>
 					<td>背景颜色</td>
@@ -32,7 +32,7 @@
 				<tr>
 					<td>分辨率</td>
 					<td>
-						<select style="width:110px;height:22px;">
+						<select class="form-control menuSelect">
 						  <option value="1920x1080">1920x1080</option>
 						</select>
 					</td>
@@ -41,7 +41,7 @@
 					<td>背景图片</td>
 					<td>
 			           <div class="fileContainer">
-			           		<input id="filelabel" type="text" style="width:85px;">
+			           		<input id="filelabel" type="text" class="form-control menuInput" style="width:85px;" readonly="readonly">
 			           		<button class="btn btn-xs btn-default" onclick="document.getElementById('file').click();">浏览</button>
 			           		<input id="file" onchange="document.getElementById('filelabel').value=this.value;" type="file" style="display: none;">
 			           </div>
@@ -50,13 +50,13 @@
 				<tr>
 					<td>页面时长</td>
 					<td>
-						<input type="text" style="width:50px;">&nbsp;<span>分</span>
+						<input type="text" class="form-control menuInput" style="width:50px;">&nbsp;<span>分</span>
 					</td>
 				</tr>
 				<tr>
 					<td>切换效果</td>
 					<td>
-						<select style="width:110px;height:22px;">
+						<select class="form-control menuSelect">
 						  <option value="0">跳转</option>
 						  <option value="1">往右滑动</option>
 						  <option value="2">往左滑动</option>
@@ -91,15 +91,39 @@
 
 	<div class="content">
 		<div id="elementProperties">
-			<h2>Lorem ipsum sit amet</h2>
-			<p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel
-				dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
-			<p>Suspendisse ac libero mauris. Cras lacinia porttitor urna,
-				vitae molestie libero posuere et. Mauris turpis tortor, mollis non
-				vulputate sit amet, rhoncus vitae purus.</p>
-			<p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel
-				dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
-			<p>Suspendisse ac libero mauris. Cras lacinia porttitor urna,
+			<table class="table table-condensed">
+				<tr>
+					<td>组件名称</td>
+					<td>
+						<input type="text" class="form-control menuInput"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<span for="x">x</span>
+						<input id="x" type="text" class="form-control menuInput" style="width:33px;"/>
+						<span for="y">y</span>
+						<input id="y" type="text" class="form-control menuInput" style="width:33px;"/>
+						<span for="width">宽</span>
+						<input id="width" type="text" class="form-control menuInput" style="width:33px;"/>
+						<span for="height">高</span>
+						<input id="height" type="text" class="form-control menuInput" style="width:33px;"/>
+					</td>
+				</tr>
+				<tr>
+					<td>组件颜色</td>
+					<td>
+						<div class="bgColorUI"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>组件透明度</td>
+					<td>
+						<input id="elmenetOpacity" style="width:100px;" class="sliderui" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="100" data-slider-enabled="true"/>
+					</td>
+				</tr>
+				
+			</table>
 		</div>
 		<div id="stufflist">
 			<h2>Vivamus fringilla suscipit justo</h2>

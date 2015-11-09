@@ -14,11 +14,11 @@ $(function() {
 		$(this).popover('hide');
 	});
 	
-	$('div[data-toggle=popover]').mouseover(function() {
-		$(this).popover('show');
-	});
-	
-	$('div[data-toggle=popover]').mouseout(function() {
-		$(this).popover('hide');
-	});
+//	$('div[data-toggle=popover]').mouseover(function() {
+//		$(this).popover('show');
+//	});
+//	
+//	$('div[data-toggle=popover]').mouseout(function() {
+//		$(this).popover('hide');
+//	});
 });

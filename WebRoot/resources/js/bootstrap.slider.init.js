@@ -1,16 +1,16 @@
 //面板右下角缩放控件
 $(function() {
-	$("#slider").slider();
-	$("#slider-enabled").click(function() {
+	$(".sliderui").slider();
+	$(".slider-enabled").click(function() {
 		if(this.checked) {
-			$("#slider").slider("enable");
+			$(this).siblings(".sliderui").slider("enable");
 		}
 		else {
-			$("#slider").slider("disable");
+			$(this).siblings(".sliderui").slider("disable");
 		}
 	});
 	
-	$('#slider').change(function(data){
+	$('.sliderui').change(function(data){
 		console.info(data.value.newValue);
 	});
 });

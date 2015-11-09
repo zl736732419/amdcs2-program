@@ -9,7 +9,7 @@
 <base href="<%=basePath%>" />
 <div style="height: 100%;">
 	<ul class="tabs pages">
-		<li>
+		<li id="current">
 			<a href="javascript:void(0)">页面1</a>
 		</li>
 		<li><a href="javascript:void(0)">页面2</a></li>
@@ -118,8 +118,8 @@
 		<!-- 缩放 -->
 		<div class="scalepanel">
 			<span>缩放&emsp;</span>
-			<input id="slider" type="text" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-value="100" data-slider-enabled="false"/>
-			&emsp;<input id="slider-enabled" type="checkbox"/>&nbsp;启用
+			<input class="sliderui" type="text" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-value="100" data-slider-enabled="false"/>
+			&emsp;<input class="slider-enabled" type="checkbox"/>&nbsp;启用
 		</div>
 	</div>
 </div>

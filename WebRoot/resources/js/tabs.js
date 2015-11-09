@@ -1,13 +1,7 @@
 $(function() {
-	var contents = $(".content:not(.pages)");
+	showFirstMenuTab();
 	
-	$(contents).children('div').hide();// 初始化面板状态，先隐藏所有面板
-	for(var i = 0; i < contents.length; i++) {
-		var content =  contents[i];
-		var tabs = $(content).siblings('.tabs');
-		$(tabs).find("li:first").attr("id","current");//选中第一个选项卡
-		$(content).children("div:first").fadeIn();//显示第一个选项卡对应的面板内容
-	}
+	
 	
 	//选项卡点击事件
 	var tabs = $('.tabs:not(.pages)');
@@ -23,3 +17,18 @@ $(function() {
 	    });
 	});
 });
+
+//显示选项卡菜单的第一页
+function showFirstMenuTab() {
+	var contents = $(".content:not(.pages)");
+	
+	$(contents).children('div').hide();// 初始化面板状态，先隐藏所有面板
+	for(var i = 0; i < contents.length; i++) {
+		var content =  contents[i];
+		var tabs = $(content).siblings('.tabs');
+		$(tabs).find("li:first").attr("id","current");//选中第一个选项卡
+		$(content).children("div:first").fadeIn();//显示第一个选项卡对应的面板内容
+	}
+	
+	
+}

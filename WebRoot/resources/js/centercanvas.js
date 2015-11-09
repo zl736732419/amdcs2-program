@@ -38,6 +38,47 @@ function init_event() {
 		
 		init_panel_style();
 	});
+	
+	$('.hideIcon').click(function() {
+		//判断当前点击的左边按钮还是右边按钮
+		var isLeft = $(this).hasClass('hideIconLeft');
+		var menu = null;
+		var isShow = null;
+		if(isLeft) { //处理左边菜单伸缩
+			menu = $('#leftMenu');
+		}else { //处理右边菜单伸缩
+			menu = $('#rightMenu');
+		}
+		var display = $(menu).css('display');
+		if(display == 'block') {
+			isShow = true;
+		}else {
+			isShow = false;
+		}
+		//得到当前中央区域的大小
+		var cls = $('#centerCanvas').attr('class');
+		var num = Number(cls.substring(cls.lastIndexOf('-')+1));
+		
+		if(isShow) {
+			//如果当前是显示出来的就隐藏
+			$(menu).css({
+				display: 'none'
+			});
+			
+			//扩大画布区域
+			$('#centerCanvas').attr('class', 'col-sm-' + (num + 2));
+			
+		}else {
+			//如果是隐藏的就显示出来
+			$(menu).css({
+				display: 'block'
+			});
+			
+			//缩小画布区域
+			$('#centerCanvas').attr('class', 'col-sm-' + (num - 2));
+		}
+		
+	});
 }
 
 
@@ -84,6 +125,68 @@ function init_btn_style() {
 		$(this).removeClass('btn-primary');
 		$(this).addClass('btn-default');
 	});
+	
+	$('.hideIcon').mouseover(function() {
+		$(this).css({
+			backgroundColor: '#a6a6a6',
+			cursor: 'pointer'
+		});
+		
+		popCollapseTip($(this));//折叠提示
+	});
+	
+	$('.hideIcon').mouseout(function() {
+		$(this).css({
+			backgroundColor: '#ddd',
+			cursor: 'default'
+		});
+		
+		$(this).popover('destroy');
+	});
+}
+
+//弹出折叠菜单提示
+function popCollapseTip(hideIcon) {
+	//判断当前菜单状态
+	var isLeft = $(hideIcon).hasClass('hideIconLeft');
+	var menu = null;
+	var isShow = null;
+	var direction = null;
+	var menuStr = null;
+	if(isLeft) { //处理左边菜单伸缩
+		menu = $('#leftMenu');
+		direction = 'right';
+		menuStr = '左菜单';
+	}else { //处理右边菜单伸缩
+		menu = $('#rightMenu');
+		direction = 'left';
+		menuStr = '右菜单';
+	}
+	var display = $(menu).css('display');
+	if(display == 'block') {
+		isShow = true;
+	}else {
+		isShow = false;
+	}
+	var msg = '';
+	if(isShow) {
+		msg += '隐藏';
+	}else {
+		msg += '显示';
+	}
+	msg += menuStr;
+	
+	$(hideIcon).popover({
+	    html: false,
+	    animation: true,
+	   	container: 'body',
+	   	trigger: 'mouseover',
+	    content: msg,
+		placement : direction
+	});
+
+	$(hideIcon).popover('show');
+	
 }
 
 function active_btn(btn) {
