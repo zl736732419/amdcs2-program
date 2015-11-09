@@ -27,6 +27,7 @@
 					<span class="box box-element">音乐</span>
 					<span class="box box-element">字幕</span>
 					<span class="box box-element">混播</span>
+					<span class="box box-element">图片</span>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right toolbar-right">

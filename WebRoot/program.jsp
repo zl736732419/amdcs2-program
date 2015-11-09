@@ -25,6 +25,7 @@
 <link href="resources/css/tabs.css" rel="stylesheet">
 <link href="resources/css/centercanvas.css" rel="stylesheet">
 <link href="resources/css/icon.css" rel="stylesheet">
+<link href="resources/css/rightmenu.css" rel="stylesheet">
 
 <script type="text/javascript" src="resources/js/plugins/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="resources/js/plugins/bootstrap.min.js"></script>
@@ -41,13 +42,13 @@
 <jsp:include page="header.jsp"></jsp:include>
 <div class="container-fluid" style="height:94%;">
 	<div class="row" style="height:100%;">
-		<div class="col-sm-2" style="height:100%;">
+		<div class="col-sm-2" style="height:100%;padding-right:0;">
 			<jsp:include page="leftmenu.jsp"></jsp:include>
 		</div>
 		<div class="col-sm-8" style="height:100%;">
 			<jsp:include page="centercanvas.jsp"></jsp:include>
 		</div>
-		<div class="col-sm-2" style="height:100%;">
+		<div class="col-sm-2" style="height:100%;padding-left:0;">
 			<jsp:include page="rightmenu.jsp"></jsp:include>
 		</div>
 	</div>
