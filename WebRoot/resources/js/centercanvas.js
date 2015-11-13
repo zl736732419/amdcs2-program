@@ -15,6 +15,11 @@ function init_event() {
 		$(this).before($(html));
 	});
 	
+	$('.pages li:not(.addpage)').click(function() {
+		$(this).siblings('li#current').removeAttr('id');
+		$(this).attr('id', 'active');
+	});
+	
 	$('.screen-type button').click(function() {
 		var val = $(this).find('.value').text();
 		//得到面板宽高
